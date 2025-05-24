@@ -1,0 +1,70 @@
+/* src/styles/Home.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #7f00ff, #e100ff);
+}
+
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 1rem;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+}
+
+.home-card {
+  background-color: white;
+  padding: 3rem 2rem;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.home-card h2 {
+  color: #4b0082;
+  margin-bottom: 0.5rem;
+}
+
+.home-card p {
+  color: #666;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.highlight {
+  color: #e100ff;
+}
+
+.primary-btn, .secondary-btn {
+  display: block;
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.primary-btn {
+  background-color: #8a2be2;
+  color: #fff;
+}
+.primary-btn:hover {
+  background-color: #6a1bb5;
+}
+
+.secondary-btn {
+  background-color: #f0e7ff;
+  color: #4b0082;
+}
+.secondary-btn:hover {
+  background-color: #e0d1ff;
+}

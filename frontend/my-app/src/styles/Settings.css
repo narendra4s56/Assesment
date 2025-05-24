@@ -1,0 +1,118 @@
+/* Container styling */
+.settings-container {
+  max-width: 480px;
+  margin: 2rem auto;
+  padding: 2.5rem 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+  transition: box-shadow 0.3s ease;
+}
+
+.settings-container:hover {
+  box-shadow: 0 16px 32px rgba(0,0,0,0.18);
+}
+
+/* Title */
+.settings-container h2 {
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+/* Profile section */
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border: 3px solid #4f46e5; /* subtle purple border */
+  transition: transform 0.3s ease;
+}
+
+.avatar:hover {
+  transform: scale(1.1);
+}
+
+.profile-info h3 {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #111;
+}
+
+.email {
+  margin-top: 0.2rem;
+  color: #666;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+}
+
+/* Description */
+.description {
+  margin-top: 1rem;
+  color: #555;
+  line-height: 1.6;
+  font-size: 1rem;
+  font-weight: 400;
+  user-select: text;
+}
+
+/* Button */
+.edit-btn {
+  margin-top: 1.8rem;
+  padding: 0.55rem 1.4rem;
+  background: #4f46e5;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(79, 70, 229, 0.3);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  font-size: 1rem;
+}
+
+.edit-btn:hover {
+  background: #4338ca;
+  box-shadow: 0 8px 16px rgba(67, 56, 202, 0.5);
+}
+
+/* Responsive */
+@media (max-width: 520px) {
+  .settings-container {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  .avatar {
+    width: 60px;
+    height: 60px;
+  }
+
+  .profile-info h3 {
+    font-size: 1.1rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+
+  .edit-btn {
+    width: 100%;
+    padding: 0.65rem 0;
+    font-size: 1rem;
+  }
+}
